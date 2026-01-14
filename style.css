@@ -14,7 +14,7 @@ main {
     height: 500px;
     width: 100px;
     background-color: #ed8dbb;
-    border-radius: 15px;
+    border-radius: 14px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -29,17 +29,18 @@ main {
     background-color: #ea76ae;
     transform: translateX(-500px);
     transition: all 500ms ease;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
 
-div.sidebar:hover ~ .second_sidebar {
-  transform: translateX(-1px);
+div.sidebar:hover ~ .second_sidebar,
+.second_sidebar:hover {
+  transform: translateX(-11px);
 }
 
 svg {
@@ -63,4 +64,12 @@ div.sidebar:hover {
     width: 30px;
     height: 30px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #16020c;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
